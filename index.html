@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PABLO Rules</title>
+
+    <!-- Підключення твого CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">-->
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <img src="pablo.jpg" class="avatar" alt="PABLO club avatar">
+            <h1>PABLO</h1>
+            <p class="subtitle">Telegram Mafia Club</p>
+        </header>
+
+        <main class="main-content">
+            <!-- СЛАЙДЕР -->
+            <div class="slider">
+                <button class="arrow left" type="button" aria-label="Previous">←</button>
+
+                <div class="cards" aria-label="Rules carousel">
+                    <button class="card" data-type="chat" type="button">
+                        <span class="card-emoji">📜</span>
+                        <span class="card-label">Правила чату</span>
+                    </button>
+
+                    <button class="card" data-type="game" type="button">
+                        <span class="card-emoji">🎭</span>
+                        <span class="card-label">Правила гри</span>
+                    </button>
+
+                    <button class="card" data-type="roles" type="button">
+                        <span class="card-emoji">🎯</span>
+                        <span class="card-label">Ролі та цілі</span>
+                    </button>
+                </div>
+
+                <button class="arrow right" type="button" aria-label="Next">→</button>
+            </div>
+        </main>
+
+        <!-- МОДАЛКА -->
+        <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content" id="modal-content">
+
+                <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+
+                <section class="modal-section" id="chat-content" data-type="chat">
+                    <!-- ❗❗❗ ТУТ БУДЕ КОНТЕНТ -->
+                    <!-- ПРАВИЛА ЧАТУ -->
+                    <h2 id="modal-title">📜 Правила чату</h2>
+
+                    <p class="warning">
+                        ⚡️ За повторне порушення одного й того ж правила покарання посилюється та застосовується по черзі, якщо інше не вказано окремо.
+                    </p>
+
+                    <div class="rule">
+                        <h3>1. Ніякого руснявого контенту 🗑</h3>
+                        <p>Стікери, GIF, меми, відео та будь-які інші матеріали відповідного характеру — під забороною.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>2. Поважай учасників спільноти 💬</h3>
+                        <p>Образи, провокації, конфлікти, токсичність або цькування — заборонені.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>3. Реклама та підозрілі посилання ⚠️</h3>
+                        <p>Заборонено рекламувати інші чати, канали, проєкти або надсилати підозрілі лінки.</p>
+                        <ul>
+                            <li>❗️ Бан без попередження</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>4. Огидний або шокуючий контент 🚫</h3>
+                        <p>Контент, який може бути неприємним або шокуючим для інших учасників, заборонений.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ WARN</li>
+                            <li>❗️ 3 WARN = Бан назавжди</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>5. Спам 🚨</h3>
+                        <p>Флуд, повторювані повідомлення, беззмістовні символи або масові повідомлення.</p>
+                        <ul>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>6. Політичні та релігійні суперечки ⚡️</h3>
+                        <p>Провокаційні політичні або релігійні дискусії, що викликають конфлікти — небажані.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>7. Особиста інформація 🔒</h3>
+                        <p>Заборонено поширювати чужі особисті дані без дозволу.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>8. 18+ контент 🔞</h3>
+                        <p>Порнографічний або сексуальний контент у чаті заборонений.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>9. Зловживання тегами 📢</h3>
+                        <p>Не тегайте без причини учасників або адміністрацію.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>10. Обхід покарання 🛑</h3>
+                        <p>Створення нових акаунтів для обходу бану.</p>
+                        <ul>
+                            <li>❗️ Перманентний бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>11. Поважай модерацію 👮‍♂️</h3>
+                        <p>Рішення адміністрації не обговорюються у чаті.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>12. Надмірний офтоп 📵</h3>
+                        <p>Повідомлення, які не стосуються тематики чату.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>13. Заборонено грати з кількох акаунтів 🎮</h3>
+                        <p>Використання кількох акаунтів для отримання переваги.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан обох акаунтів</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule">
+                        <h3>14. Видавання себе за іншу особу 🎭</h3>
+                        <p>Заборонено видавати себе за іншу людину або адміністрацію.</p>
+                        <ul>
+                            <li>❗️ Попередження</li>
+                            <li>❗️ Бан</li>
+                        </ul>
+                    </div>
+
+                </section>
+                <!-- ПРАВИЛА ГРИ -->
+                <section class="modal-section" id="game-content" data-type="game">
+                    <h2>🎭 Правила гри</h2>
+
+                    <div class="rule-block">
+                        <h3>🌛 Ніч</h3>
+                        <p>
+                            У нічній фазі всі гравці мовчать у загальному чаті та виконують свої дії виключно через бота.
+                        </p>
+                    </div>
+
+                    <div class="rule-block">
+                        <h3>☀️ День</h3>
+                        <ul>
+                            <li>Обговорення подій</li>
+                            <li>Пошук підозрюваних</li>
+                            <li>Підготовка до голосування</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule-block">
+                        <h3>💬 Голосування</h3>
+                        <ul>
+                            <li>Кожен гравець має 1 голос</li>
+                            <li>Голосування триває обмежений час</li>
+                            <li>Може завершитись достроково при більшості</li>
+                            <li>Гравець з найбільшою кількістю голосів — вибуває</li>
+                        </ul>
+                    </div>
+
+                    <div class="rule-block">
+                        <h3>📌 Поведінка</h3>
+                        <ul>
+                            <li>Дотримуйся правил чату</li>
+                            <li>Поважай інших гравців</li>
+                            <li>Заборонено флуд, образи та злив гри</li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="modal-section" id="roles-content" data-type="roles">
+                    <h2>🎯 Ролі та цілі</h2>
+
+                    <div class="role">
+                        <h3>🤩 Дон мафії</h3>
+                        <p>Головний серед мафії. Координує команду та приймає ключові рішення.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🔪 Мафія</h3>
+                        <p><b>Мета:</b> знищити мирних або зрівнятися з ними.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>😇 Мирний житель</h3>
+                        <p><b>Мета:</b> знайти та вигнати мафію.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🚑 Лікар</h3>
+                        <p>Щоночі може врятувати одного гравця.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🚓 Слідчий</h3>
+                        <p>Перевіряє гравців і шукає мафію.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🫦 Повія</h3>
+                        <p>Блокує дію гравця вночі.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🗡 Джек-Різник</h3>
+                        <p>Грає сам за себе. Полює на Повію або позначеного Дона.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>❣️ Суїцидник</h3>
+                        <p>Виграє, якщо його вигнали голосуванням.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🍺 Волоцюга</h3>
+                        <p>Отримує інформацію про нічні візити.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🔮 Чаклун</h3>
+                        <p>Після активації може вбивати щоночі.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>⚔️ Маніяк</h3>
+                        <p>Одинак, вбиває будь-кого.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>✍️ Адвокат</h3>
+                        <p>Може змінити сторону гравця.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🤡 Баламут</h3>
+                        <p>Перевертає ролі при перевірці.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🖥 Журналістка</h3>
+                        <p>Дізнається чи гравці в одній команді.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>💃 Домініка</h3>
+                        <p>Мафіозна версія Повії.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🙂 Щастя</h3>
+                        <p>50% шанс вижити вночі.</p>
+                    </div>
+
+                    <div class="role">
+                        <h3>🔥 Камікадзе</h3>
+                        <p>Може забрати когось із собою при вигнанні.</p>
+                    </div>
+
+                    <h2 class="buffs-title">💥 Бафи</h2>
+
+                    <div class="buffs">
+
+                        <div class="buff">🛡 Захист — рятує від смерті</div>
+                        <div class="buff">🎎 Активна роль — шанс отримати бажану роль</div>
+                        <div class="buff">🎧 Рація — бачиш приватні розмови</div>
+                        <div class="buff">👼 Контрацептив — контрить Повію</div>
+                        <div class="buff">📇 Документи — маскують роль</div>
+                        <div class="buff">🚕 Таксі — втеча з голосування</div>
+                        <div class="buff">💥 Міна — вбиває нападника</div>
+                        <div class="buff">🔪 Ніж — відкладене вбивство</div>
+                        <div class="buff">💉 Аптечка — особистий лікар</div>
+                    </div>
+
+                    <div class="special">
+                        <h3>📦 Спешіал</h3>
+                        <div class="buff">📦 Кейс — випадковий баф</div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- CREDITS -->
+        <footer class="footer">
+            <span>Made for Pablo</span>
+            <a href="https://t.me/tech_delulu" target="_blank" rel="noopener noreferrer" class="dev">
+                @tech_delulu
+            </a>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
