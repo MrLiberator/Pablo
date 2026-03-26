@@ -151,3 +151,14 @@
         window.addEventListener('mousemove', showArrowsTemporarily, { passive: true });
     }
 })();
+/*анті-школьнік-угон*/
+document.addEventListener("keydown", e => {
+    if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
+        (e.ctrlKey && e.key === "U")
+    ) {
+        e.preventDefault();
+        alert("DevTools заблоковано.");
+    }
+});
